@@ -1,0 +1,82 @@
+.mainText{
+color: white;
+display: flex;
+justify-content: center;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+button.field{
+    width: 430px;
+    border: 2px;
+    border-radius: 10px;
+    background-color: white;
+    height: 67px;
+    transition: 0.3s;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+button.field:hover{
+    transform: scale(1.1);
+}
+input{
+    position: absolute;
+    outline: none;
+    width: 100%;
+    line-height: 80px;
+    background:transparent;
+    transition: 0.1s;
+    border: 2px solid white;
+    border-radius: 10px;
+    z-index: 1111;
+    font-size: 14px;
+    
+}
+input:focus,
+input:valid{
+    color: white;
+    border: 4px solid white;
+
+    
+
+}
+input:focus + .label,
+input:valid + .label{
+    color: white;
+    height: 30px;
+    line-height: 30px;
+    transform: translate(-8px,-16px) scale(0.88);
+    z-index: 1111;
+    background-color: #4801FF;
+    border-radius: 10px;
+    
+}
+.label{
+    position: absolute;
+    font-size: 20px;
+    padding: 0 10px;
+    margin: 0 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 500;
+    transition: 0.2s ease;
+    
+
+}
+.username{
+    position: relative;
+    height: 67px;
+    width: 423px;
+    line-height: 80px;
+}
+.password{
+    position: relative;
+    height: 67px;
+    width: 423px;
+    line-height: 80px;
+}
+
